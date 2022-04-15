@@ -66,7 +66,7 @@ class BookServiceTest extends IntegrationBaseTest {
 
     @Test
     @Transactional
-    void should_persist_successfully_when_persist_entity_has_not_id__given_GeneratedValue_annotation() {
+    void should_persist_successfully_when_persist_entity_has_not_id_given_GeneratedValue_annotation() {
         assertTrue(bookRepository.findAll().isEmpty());
         Book book = BookBuilder.withDefault()
                 .withName(BOOK_NAME)
@@ -84,7 +84,7 @@ class BookServiceTest extends IntegrationBaseTest {
 
     @Test
     @Transactional
-    void should_throw_exception_when_persist_entity_has_id__given_GeneratedValue_annotation() {
+    void should_throw_exception_when_persist_entity_has_id_given_GeneratedValue_annotation() {
         assertTrue(bookRepository.findAll().isEmpty());
         Book book = BookBuilder.withDefault()
                 .withId(1)
