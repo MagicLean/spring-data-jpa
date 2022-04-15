@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: demo-spring-data-jpa
+  jackson:
+    date-format: yyyy-MM-dd'T'HH:mm:ss.SSS'Z'
+    serialization:
+      write_dates_as_timestamps: false
+  jpa:
+    hibernate:
+      use-new-id-generator-mappings: false
