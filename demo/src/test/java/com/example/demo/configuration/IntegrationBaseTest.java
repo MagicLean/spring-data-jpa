@@ -2,7 +2,6 @@ package com.example.demo.configuration;
 
 
 import com.example.demo.DemoApplication;
-import com.example.demo.domain.repository.BookRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

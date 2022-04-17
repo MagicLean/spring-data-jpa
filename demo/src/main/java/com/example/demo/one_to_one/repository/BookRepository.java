@@ -1,6 +1,6 @@
-package com.example.demo.domain.repository;
+package com.example.demo.one_to_one.repository;
 
-import com.example.demo.domain.entity.Book;
+import com.example.demo.one_to_one.entity.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

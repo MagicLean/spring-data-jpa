@@ -1,9 +1,9 @@
 package com.example.demo.builder;
 
 import com.example.demo.configuration.SpringApplicationContext;
-import com.example.demo.domain.entity.Book;
-import com.example.demo.domain.entity.BookDetail;
-import com.example.demo.domain.repository.BookDetailRepository;
+import com.example.demo.one_to_one.entity.Book;
+import com.example.demo.one_to_one.entity.BookDetail;
+import com.example.demo.one_to_one.repository.BookDetailRepository;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
