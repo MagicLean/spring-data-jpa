@@ -36,6 +36,7 @@ public class Post {
             orphanRemoval = true,
             mappedBy = "post"
     )
+//    @JoinColumn
     private Set<PostComment> comments = new HashSet<>();
 
     public void addComment(PostComment comment) {

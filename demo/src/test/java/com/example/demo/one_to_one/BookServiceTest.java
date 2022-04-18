@@ -72,8 +72,8 @@ class BookServiceTest extends IntegrationBaseTest {
                 .withName(BOOK_NAME)
                 .build();
         assertTrue(bookRepository.findAll().isEmpty());
-        // refresh抛出异常
-//        entityManager.refresh(book);
+         //refresh抛出异常
+        entityManager.refresh(book);
 //        assertThrows(IllegalArgumentException.class, () -> entityManager.refresh(book));
     }
 
@@ -86,7 +86,7 @@ class BookServiceTest extends IntegrationBaseTest {
                 .withName(BOOK_NAME)
                 .build();
         // persist抛出异常
-//        entityManager.persist(book);
+        entityManager.persist(book);
         assertThrows(PersistenceException.class, () -> entityManager.persist(book));
     }
 
@@ -158,7 +158,7 @@ class BookServiceTest extends IntegrationBaseTest {
         Book book = bookService.initBook();
         assertEquals("init", book.getName());
         // 此时调用refresh或者remove方法，会抛出异常 IllegalArgumentException
-//        entityManager.refresh(book);
+        entityManager.refresh(book);
 //        entityManager.remove(book);
         assertThrows(IllegalArgumentException.class, () -> entityManager.refresh(book));
         assertThrows(IllegalArgumentException.class, () -> entityManager.remove(book));

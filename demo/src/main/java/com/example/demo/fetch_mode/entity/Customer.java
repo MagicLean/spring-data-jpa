@@ -32,7 +32,7 @@ public class Customer {
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "customer",fetch = FetchType.LAZY)
     @Fetch(value = FetchMode.SELECT)
-    @BatchSize(size= 1)
+    @BatchSize(size= 2)
     private Set<Order> orders = new HashSet<>();
 
     public void addOrder(Order order){
