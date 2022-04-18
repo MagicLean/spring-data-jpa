@@ -20,12 +20,6 @@ spring:
   boot:
     mariadb4j:
       databaseName: test
-
-
-
-
-
-
 logging:
   level:
     org:
